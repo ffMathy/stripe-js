@@ -1014,7 +1014,7 @@ export type PaymentIntentResult =
 
 export type SetupIntentResult =
   | {setupIntent: api.SetupIntent; error?: undefined}
-  | {setupIntent?: undefined; error: StripeError};
+  | {setupIntent?: api.SetupIntent; error: StripeError};
 
 export type ProcessOrderResult =
   | {paymentIntent: api.PaymentIntent; order: api.Order; error?: undefined}
